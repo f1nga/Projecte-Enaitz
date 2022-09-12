@@ -1,5 +1,11 @@
+com\mycompany\trabajadores\Astronauta.class
 com\mycompany\frame\Home$1.class
+com\mycompany\trabajadores\Espia.class
 com\mycompany\frame\Home$3.class
 com\mycompany\frame\Home$2.class
+com\mycompany\trabajadores\Persona.class
 com\mycompany\connection\ConnectorDB.class
 com\mycompany\frame\Home.class
+com\mycompany\trabajadores\Cientific.class
+com\mycompany\init\Start.class
+com\mycompany\trabajadores\Mecanic.class
