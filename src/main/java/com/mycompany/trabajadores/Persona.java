@@ -21,4 +21,54 @@ public abstract class Persona {
     public Persona(String nom) {
         this.nom = nom;
     }
+     public String getNom() {
+        return nom;
+    }
+
+    public  void setNom(String nom) {
+        this.nom = nom;
+    }
+     public int getEdat() {
+        return edat;
+    }
+
+    public void setEdat(int edat) {
+        this.edat = edat;
+    }
+    
+     public char getSexe() {
+        return sexe;
+    }
+
+    public void setSexe(char sexe) {
+        this.sexe = sexe;
+    }
+     public String getAdress() {
+        return adressa;
+    }
+
+    public void setAdress(String adressa) {
+        this.adressa = adressa;
+    }
+     public double getSalari() {
+        return salari;
+    }
+
+    public void setSalari(double salari) {
+        this.salari = salari;
+    }
+     public String getCiutat() {
+        return ciutat;
+    }
+
+    public void setCiutat(String ciutat) {
+        this.ciutat = ciutat;
+    }
+     public int getExp() {
+        return anys_experiencia;
+    }
+
+    public void setExp(int anys_experiencia) {
+        this.anys_experiencia= anys_experiencia;
+    }
 }
