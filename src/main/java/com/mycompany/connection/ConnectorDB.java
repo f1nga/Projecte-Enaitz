@@ -6,22 +6,29 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ConnectorDB {
-    private Connection con;
+    public  Connection con;
     
     public ConnectorDB() {
         connectarBaseDades();
     }
     
-    void connectarBaseDades() {
+    public void connectarBaseDades() {
         con = null;
-        String url = "jdbc:mysql://localhost:3306/carrera_espacial?autoReconnect=true&useSSL=false";
+        String url = "jdbc:mysql://localhost:3306/Contactes?autoReconnect=true&useSSL=false";
         String usuari = "root";
-        String password = "o4f7g9k66";
+        String password = "pass";
         
         try {
             con = (Connection) DriverManager.getConnection(url, usuari, password);
+            System.out.println("Conexio correcte!");
         } catch (SQLException e) {
             System.out.println("Error " + e.getMessage());
         }
+    }
+     public void setCon(Connection con) {
+        this.con = con;
+    }
+     public Connection getCon() {
+        return con;
     }
 }

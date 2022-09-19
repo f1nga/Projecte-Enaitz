@@ -6,8 +6,11 @@ package com.mycompany.trabajadores;
 
 
 import com.mycompany.connection.ConnectorDB;
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -19,7 +22,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author didac
+ * @author Stanislav
  */
 public class Mecanic extends Persona{
     
@@ -105,9 +108,20 @@ public class Mecanic extends Persona{
         return dadesCotxes;
     }
      
+        public void cotxesEnTxt(String nomRuta,String [][] dadesCotxe ) throws IOException{
+            BufferedWriter escriu = null;
+            escriu = new BufferedWriter(new FileWriter(nomRuta));
+            
+            for(int i = 0;i<dadesCotxe.lenght();i++){
+                escriu.write(dadesCotxe[i]+" ");
+            }
+            
+            
+        }
+     
      
    
-        
+         
         
         
         
